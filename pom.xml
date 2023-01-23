@@ -5,6 +5,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>User-Services</module>
+        <module>Wallet-Services</module>
+		<module>Transaction-Services</module>
+        <module>Notifications-Service</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -30,8 +33,17 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
 		</dependency>
 
 		<dependency>
